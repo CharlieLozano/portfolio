@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Fjalla+One&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Potta+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Arizonia&family=Fjalla+One&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Potta+One&display=swap');
 
 .open-sans {
     font-family: "Open Sans", serif;
@@ -31,8 +31,11 @@
 
 body {
     box-sizing: content-box;
-    margin: 0;
+    margin: auto;
+    background-color: #000000;
+
 }
+
 
 h1 {
     font-family: "Fjalla One", serif;
@@ -127,10 +130,13 @@ header .trapezoid {
 
 header h1{
 
-    font-family: "Potta One", serif;
-    font-weight: 400;
+    font-family: "Fjalla One", serif;
+    font-weight: 600;
     font-style: normal;
-    color: rgb(214, 241, 107);
+    font-size: 40px;
+    letter-spacing: 0.03cap;
+    text-shadow: #FC0 1px 0 10px;
+    color: rgb(255, 243, 75);
     margin-bottom: 10px;
 }
 
@@ -339,7 +345,9 @@ svg{
     box-shadow: -10px 10px 14px -10px rgba(83,46,122,0.55);
 }
 
-
+.subsection .wrapper{
+    flex-wrap: wrap;
+}
 
 .subsection h2 {
     margin-bottom: 15px;
@@ -495,6 +503,7 @@ svg{
     gap: 5px; /* Optional: space between images */
     justify-content: left;
     margin-bottom: 5px; 
+    width: 100%;
 }
 
 .indentation img{
@@ -508,10 +517,7 @@ svg{
 }
   
   .first-row img {
-
-    height: 250px; /* Maintain aspect ratio */
-    max-height: 250px; /* Limit the max height of the images */
-
+    max-height: 250px;
 
   }
   
@@ -569,6 +575,8 @@ nav {
 nav h1 {
     width: 100%;
     padding-left: 20px;
+    padding-top: 5px;
+
 }
 
 nav ul {
@@ -673,4 +681,214 @@ nav ul li ul.submenu li a:hover {
 
 .contact h1 {
     border-color: rgb(0, 234, 255);
+}
+
+@media only screen and (max-width: 1400px) {
+
+    .car{
+        bottom: 480px;
+    }
+
+    .car img{
+        width: 700px;
+    }
+
+    .indentation .row{
+        display: flex; /* Arrange the images in a row */
+        justify-content: space-around;
+        margin-bottom: 5px; 
+    }
+    
+    .indentation img{
+        transition: width 0.3s ease; /* Smooth transition on hover */
+        object-fit: cover;
+        
+    }
+      
+    .first-row img {
+        width: 19.5%; /* Each image takes 100% of the space of its container */
+        max-height: 250px;
+    }
+
+    .first-row img:hover {
+        width: 20%;
+    }
+    
+    
+    .second-row img{
+        width: 24.5%;
+        max-height: 420px;   
+    }
+
+    .second-row img:hover {
+        width: 25%;
+    }
+    
+    .third-row img{
+        width: 32.8%;
+        max-height: 220px;   
+    }
+    
+    .third-row img:hover{
+        width: 33.3%;
+    }
+
+    .fourth-row img{
+        width: 49.3%;
+        max-height: 300px;
+    }
+
+    .fourth-row img:hover{
+        width: 50%;
+    }
+
+    .subsection{
+        flex-wrap: wrap;
+    }
+
+    .subsection .description{
+        width: 100%;
+    }
+
+    .description{
+        padding: 40px 0 0 0;
+    }
+
+    .description button{
+        margin-bottom: 40px;
+    }
+
+
+  }
+
+  @media only screen and (max-width: 900px) {
+  
+    header{
+        height: 80vh;
+    }
+
+    header .wrapping{
+        margin-bottom: 100px;
+    }
+
+    .car{
+        bottom: 250px;
+        transform: translateX(80px);
+    }
+
+    .car img{
+        width: 400px;
+    }
+
+
+    .second-row img{
+        max-height: 300px;   
+    }
+
+    .subsection{
+        border-radius: 15px;
+        background: linear-gradient(90deg, rgb(52 69 110) 0%,rgba(52, 69, 110, 0.2) 100%) !important;
+    }
+
+    .carousel{
+        width: 100%;
+    }
+
+    .skills{
+        justify-content: center;
+    }
+
+    .skills .card{
+        width: 30%;
+    }
+
+
+}
+
+
+@media only screen and (max-width: 800px) {
+
+    .car{
+        bottom: 220px;
+    }
+
+    .car img{
+        width: 350px;
+    }
+
+
+    .indentation .row{
+        flex-wrap: wrap;
+        gap: 7px;
+    }
+
+    .first-row img {
+        width: 48.6%;
+        max-height: 250px;
+    }
+
+    .first-row img:hover {
+        width: 49.5%;
+    }
+
+    .main-image{
+        width: 98% !important;
+    }
+
+    .main-image:hover{
+        width: 100% !important;
+    }
+
+    .second-row img{
+        width: 48.6%;
+        max-height: 300px;   
+    }
+
+    .second-row img:hover {
+        width: 49.5%;
+    }
+    
+
+    .third-row img{
+        width: 31.7%;
+        max-height: 350px;   
+    }
+
+    .third-row img:hover{
+        width: 32.3%;
+    }
+
+    .fourth-row img{
+        width: 98%;
+        max-height: 300px;
+    }
+
+    .fourth-row img:hover{
+        width: 100%;
+    }
+
+
+
+}
+
+
+@media only screen and (max-width: 600px) {
+
+
+    .car{
+        transform: translateX(0);
+    }
+
+
+    .websites img{
+        width: 100%;
+    }
+
+    .skills .card{
+        width: 90%;
+    }
+
+    .subsection{
+        margin: 20px 0 30px;
+    }
 }
