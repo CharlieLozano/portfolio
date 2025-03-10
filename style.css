@@ -88,7 +88,7 @@ header {
 }
 
 .center-container{
-    width: 1440px;
+    max-width: 1440px;
     margin: auto;
 }
 
