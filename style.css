@@ -29,6 +29,10 @@
 
 /* Main Build*/
 
+html, body {
+    overflow-x: hidden;
+  }
+
 body {
     box-sizing: content-box;
     margin: auto;
@@ -197,7 +201,7 @@ svg{
 
  .car {
     position: absolute;    
-    top: 200px;
+    top: calc(100vh - 550px);
     left: -100px; /* Start off-screen */
     animation: drive 5s ease-in-out forwards, drive2 10s 5s ease-in-out infinite;
     z-index: 4;
@@ -855,7 +859,7 @@ nav ul li ul.submenu li a:hover {
     }
 
     .car{
-        top: 300px;
+        top: calc(100vh - 420px);
         transform: translateX(0px);
     }
 
@@ -896,7 +900,7 @@ nav ul li ul.submenu li a:hover {
 @media only screen and (max-width: 800px) {
 
     .car{
-        bottom: 220px;
+        top: calc(100vh - 420px);
     }
 
     .car img{
@@ -964,7 +968,7 @@ nav ul li ul.submenu li a:hover {
 @media only screen and (max-width: 700px) {
 
     .car{
-        top: 400px;
+        top: calc(100vh - 320px);
         transform: translateX(-20%);
 
     }
@@ -992,6 +996,10 @@ nav ul li ul.submenu li a:hover {
 
     .subsection{
         margin: 20px 0 30px;
+    }
+
+    .indentation{
+        margin-left: 0;
     }
 }
 
