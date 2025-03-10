@@ -30,7 +30,7 @@
 /* Main Build*/
 
 html, body {
-    overflow-x: hidden;
+    overflow-x: hidden !important;
   }
 
 body {
@@ -905,6 +905,10 @@ nav ul li ul.submenu li a:hover {
 
     .car img{
         width: 350px;
+    }
+
+    header .wrapping{
+        margin-bottom: 300px;
     }
 
     .row img{
