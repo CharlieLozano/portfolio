@@ -42,3 +42,25 @@ let colorArray = [
       repeatRefresh: true
     }
   }).seek(100)
+
+  // Preload all frames
+const frames = [];
+let imagesLoaded = 0;
+const totalFrames = 12;
+
+for (let i = 0; i < totalFrames; i++) {
+    const img = new Image();
+    img.src = `animation/frame${i.toString().padStart(4, '0')}.png`;
+    
+    // Increment counter when each image loads
+    img.onload = function() {
+        imagesLoaded++;
+        
+        // When all frames are loaded, start the animation
+        if (imagesLoaded === totalFrames) {
+            document.querySelector('.animation-container').classList.add('animated');
+        }
+    };
+
+    frames.push(img); // Push the preloaded image to the array
+}
