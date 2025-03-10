@@ -201,6 +201,13 @@ svg{
     stroke-width: 3px;
   }
 
+.car-wrapper{
+    overflow-x: hidden;
+    position: absolute;
+    height: 300vh;
+    width: 100%;
+}
+
  .car {
     position: absolute;    
     top: calc(100vh - 550px);
@@ -208,6 +215,10 @@ svg{
     animation: drive 5s ease-in-out forwards, drive2 10s 5s ease-in-out infinite;
     z-index: 4;
     
+  }
+
+  .wobble{
+    animation: wobble .5s linear infinite; 
   }
   
   @keyframes drive {
