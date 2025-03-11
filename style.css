@@ -204,8 +204,9 @@ svg{
 .car-wrapper{
     overflow-x: hidden;
     position: absolute;
-    height: 300vh;
+    height: 120vh;
     width: 100%;
+    background-color: red;
 }
 
  .car {
