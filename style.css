@@ -1018,6 +1018,19 @@ nav ul li ul.submenu li a:hover {
     .indentation{
         margin-left: 0;
     }
+
+    header .center-container{
+        padding-left: 90px;
+    }
+    
+    header h1{
+        font-size: 36px;
+        margin-bottom: 0;
+    }
+
+    header h2{
+        font-size: 22px;
+    }
 }
 
 
